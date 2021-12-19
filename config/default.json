@@ -1,0 +1,3 @@
+{
+  "mongoURI": "mongodb+srv://robin:admin123@cluster0.ydsmj.azure.mongodb.net/devConnector?retryWrites=true&w=majority"
+}
