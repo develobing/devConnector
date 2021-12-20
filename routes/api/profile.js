@@ -8,7 +8,7 @@ const User = require('../../models/User');
 const router = express.Router();
 
 /**
- * @route   GET api/profile/me
+ * @route   GET /api/profile/me
  * @desc    Get current users profile
  * @access  Private
  */
@@ -31,7 +31,7 @@ router.get('/me', auth, async (req, res) => {
 });
 
 /**
- * @route   POST api/profile
+ * @route   POST /api/profile
  * @desc    Create or update user profile
  * @access  Private
  */
@@ -115,7 +115,7 @@ router.post(
 );
 
 /**
- * @route   GET api/profile
+ * @route   GET /api/profile
  * @desc    Get all profiles
  * @access  Public
  */
@@ -130,7 +130,7 @@ router.get('/', async (req, res) => {
 });
 
 /**
- * @route   GET api/profile/user/:user_id
+ * @route   GET /api/profile/user/:user_id
  * @desc    Get profile by user ID
  * @access  Public
  */
@@ -153,7 +153,7 @@ router.get('/user/:user_id', async (req, res) => {
 });
 
 /**
- * @route   DELETE api/profile
+ * @route   DELETE /api/profile
  * @desc    Delete profile, user & posts
  * @access  Private
  */
@@ -173,7 +173,7 @@ router.delete('/', auth, async (req, res) => {
 });
 
 /**
- * @route   PUT api/profile/experience
+ * @route   PUT /api/profile/experience
  * @desc    Add profile experience
  * @access  Private
  */
@@ -218,7 +218,7 @@ router.put(
 );
 
 /**
- * @route   DELETE api/profile/user/:exp_id
+ * @route   DELETE /api/profile/user/:exp_id
  * @desc    Delete experience from profile
  * @access  Public
  */
@@ -245,7 +245,7 @@ router.delete('/experience/:exp_id', auth, async (req, res) => {
 });
 
 /**
- * @route   PUT api/profile/education
+ * @route   PUT /api/profile/education
  * @desc    Add profile education
  * @access  Private
  */
@@ -291,7 +291,7 @@ router.put(
 );
 
 /**
- * @route   DELETE api/profile/user/:edu_id
+ * @route   DELETE /api/profile/user/:edu_id
  * @desc    Delete education from profile
  * @access  Public
  */
@@ -318,7 +318,7 @@ router.delete('/education/:edu_id', auth, async (req, res) => {
 });
 
 /**
- * @route   GET api/profile/github/:username
+ * @route   GET /api/profile/github/:username
  * @desc    Get user repos from Github
  * @access  Public
  */
