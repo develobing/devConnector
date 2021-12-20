@@ -4,8 +4,8 @@
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
+    "start": "node server/server",
+    "server": "nodemon server/server"
   },
   "author": "Robin",
   "license": "MIT",
