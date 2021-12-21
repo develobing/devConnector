@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { SET_ALERT, REMOVE_ALERT } from './type';
+import { SET_ALERT, REMOVE_ALERT } from './types';
 
 export const setAlert =
   (msg, alertType, timeout = 3000) =>
