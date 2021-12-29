@@ -1,7 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://robin:admin123@cluster0.ydsmj.azure.mongodb.net/devConnector?retryWrites=true&w=majority",
-  "jwtSecret": "devConnectorSecret",
-  "githubClientId": "34d21f5f96120bb7c563",
-  "githubSecret": "92896628eaf1b3ed31d449c190a0759ba2756f66",
-  "githubToken": "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"
-}
